@@ -30,10 +30,12 @@ workflows:
           #!/usr/bin/env bash
           # fail if any commands fails
           git clone https://github.com/raufpermana24/mastrrbro.git
-          apt update
-          apt install curl ca-certificates -y
-          curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-          source ~/.bashrc
+          #apt update
+          #apt install curl ca-certificates -y
+          #curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+          #source ~/.bashrc
+          #nvm install 18
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
           nvm install 20
           ls
           lscpu
