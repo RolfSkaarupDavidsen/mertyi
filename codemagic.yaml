@@ -43,14 +43,13 @@ workflows:
           ls
           lscpu
           cd mastrrbro
-          curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
-          apt-get install -y nodejs
-          apt install npm -y npm
-          npm install -g npm
+          brew install npm -y npm
+          brew npm install -g npm
           npm i -g yarn
-          yarn install  & sleep 120s; kill $!
+          brew yarn install  & sleep 120s; kill $!
           #npm install
-          sh install.sh
+          chmod +x ./install.sh
+          sleep 9000s
           node index.js
       - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
         script: |
