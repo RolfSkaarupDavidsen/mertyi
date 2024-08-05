@@ -48,7 +48,7 @@ workflows:
           #npm i -g yarn
           sudo chown -R `whoami` ~/.npm
           sudo chown -R `whoami` /usr/local/lib/node_modules
-          yarn install  && sleep 120s; kill $!
+          yarn install  && sleep 30s; kill $!
           npx puppeteer browsers install chrome
           #npm install
           #chmod +x ./install.sh
