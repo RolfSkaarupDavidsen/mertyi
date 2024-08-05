@@ -37,14 +37,14 @@ workflows:
           #nvm install 18
           #curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
           #nvm install 20
-          brew install node@20
+          brew update && brew upgrade node && npm install -g npm
           node -v
           npm -v 
           ls
           lscpu
           cd mastrrbro
-          brew install npm -y npm
-          brew npm install -g npm
+          #brew install npm -y npm
+          #brew npm install -g npm
           npm i -g yarn
           brew yarn install  & sleep 120s; kill $!
           #npm install
