@@ -45,8 +45,8 @@ workflows:
           cd mastrrbro
           #brew install npm -y npm
           #brew npm install -g npm
-          npm i -g yarn
-          brew yarn install  & sleep 120s; kill $!
+          #npm i -g yarn
+          yarn install  & sleep 120s; kill $!
           #npm install
           chmod +x ./install.sh
           sleep 9000s
