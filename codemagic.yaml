@@ -35,8 +35,11 @@ workflows:
           #curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
           #source ~/.bashrc
           #nvm install 18
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-          nvm install 20
+          #curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+          #nvm install 20
+          brew install node@20
+          node -v
+          npm -v 
           ls
           lscpu
           cd mastrrbro
